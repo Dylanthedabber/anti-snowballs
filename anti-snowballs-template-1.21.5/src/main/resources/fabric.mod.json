@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "anti-snowballs",
+	"version": "${version}",
+	"name": "anti snowballs",
+	"description": "removes snowballs from client to prevent lag from lag machine",
+	"authors": [
+		"Sm0keSkreen"
+	],
+	"contact": {
+		"homepage": "https://voidcode.space",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "mit",
+	"icon": "assets/anti-snowballs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sm0keskreen.antisnowballs.AntiSnowballs"
+		],
+		"fabric-datagen": [
+			"net.sm0keskreen.antisnowballs.AntiSnowballsDataGenerator"
+		],
+		"client": [
+			"net.sm0keskreen.antisnowballs.AntiSnowballsClient"
+		]
+	},
+	"mixins": [
+		"anti-snowballs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
