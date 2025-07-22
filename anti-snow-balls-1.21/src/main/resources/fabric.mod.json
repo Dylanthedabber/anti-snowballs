@@ -3,20 +3,23 @@
 	"id": "anti-snow-balls",
 	"version": "${version}",
 	"name": "Anti Snow Balls",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "removes snowballs from client to prevent lag from lag machine",
 	"authors": [
-		"Me!"
+		"Sm0keSkreen"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://voidcode.space",
+		"sources": "https://github.com/Dylanthedabber/anti-snowballs/"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/anti-snow-balls/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.antisnowballs.AntiSnowBalls"
+		],
+		"client": [
+			"com.antisnowballs.AntiSnowballsClient"
 		]
 	},
 	"mixins": [
