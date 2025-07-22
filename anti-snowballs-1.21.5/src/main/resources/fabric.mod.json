@@ -13,7 +13,7 @@
 	},
 	"license": "mit",
 	"icon": "assets/anti-snowballs/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"net.sm0keskreen.antisnowballs.AntiSnowballs"
